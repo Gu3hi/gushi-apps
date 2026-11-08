@@ -16,7 +16,7 @@ LCSign 里：软件源 → 添加 → 粘贴上面地址。同一个源也能在
 
 | App | Bundle ID | 版本 | 最低系统 | 大小 |
 |---|---|---|---|---|
-| 低调影视 DDYS | com.gushi.ddys | 1.0.2 (build 2) | iOS 16.0 | 676,395 |
+| 低调影视 DDYS | com.gushi.ddys | 1.0.16 (build 16) | iOS 16.0 | 1,832,355 |
 | D2R Mobile | org.d2rmobile.app | 1.0 (build 1) | iOS 17.0 | 123,530,804 |
 
 SHA-256 写在 `apps.json` 每个版本条目里，可核对。
