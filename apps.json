@@ -29,16 +29,6 @@
           "sha256": "ad5f963022b1c68f298765fdb40d03ec2fb461d8bff55199f9523fb4cbb74902",
           "size": 1832355,
           "version": "1.0.16"
-        },
-        {
-          "buildVersion": "2",
-          "date": "2026-11-08T11:43:00+08:00",
-          "downloadURL": "https://github.com/Gu3hi/gushi-apps/releases/download/ddys-1.0.2/DDYS-1.0.2.ipa",
-          "localizedDescription": "本地存档版。SHA-256 3759337c0b8de85c6f4cc7df61a79bd292999e0d390569d78229c93778572c9a",
-          "minOSVersion": "16.0",
-          "sha256": "3759337c0b8de85c6f4cc7df61a79bd292999e0d390569d78229c93778572c9a",
-          "size": 676395,
-          "version": "1.0.2"
         }
       ]
     },
