@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gushi 自用源 · LCSign 软件源</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;margin:0;background:#f6f6f8;color:#111}
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px}
+  h1{font-size:24px;margin:8px 0 4px}.sub{color:#666;margin:0 0 20px}
+  .card{background:#fff;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+  code{display:block;word-break:break-all;background:#f1f1f4;border-radius:10px;padding:12px;font-size:13px}
+  button{background:#f54f32;color:#fff;border:0;border-radius:10px;padding:10px 16px;font-size:15px;margin-top:10px}
+  .app{display:flex;gap:14px;align-items:center}.app img{width:52px;height:52px;border-radius:12px}
+  .app b{font-size:16px}.app p{margin:2px 0;color:#666;font-size:13px}
+  a{color:#f54f32}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Gushi 自用源</h1>
+  <p class="sub">自用 App 合集 · 未签名 IPA，在 LCSign 里下载后用自己的证书签名安装</p>
+
+  <div class="card">
+    <b>源地址（在 LCSign → 软件源 → 添加 时填这个）</b>
+    <code id="src">https://raw.githubusercontent.com/Gu3hi/gushi-apps/main/apps.json</code>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('src').textContent)">复制源地址</button>
+    <p style="color:#666;font-size:13px">同一个源也可在轻松签 / Feather / SideStore / AltStore 里添加。</p>
+  </div>
+
+  <div id="apps"></div>
+
+  <div class="card">
+    <b>另一种加法（LCSign 1.4+）</b>
+    <p style="color:#666;font-size:14px">LCSign 1.4 新增了「GitHub Releases」源类型：直接填仓库地址
+    <code style="display:inline;padding:2px 6px">https://github.com/Gu3hi/gushi-apps</code>
+    它会自动按版本列出 Releases 里的 IPA，连 apps.json 都不用维护。两种加法任选其一。</p>
+  </div>
+</div>
+<script>
+fetch('apps.json').then(r=>r.json()).then(s=>{
+  document.getElementById('apps').innerHTML = s.apps.map(a=>`
+    <div class="card app">
+      <img src="${a.iconURL.replace('https://raw.githubusercontent.com/Gu3hi/gushi-apps/main/','')}" alt="">
+      <div><b>${a.name}</b> <span style="color:#888">v${a.version}</span>
+      <p>${a.subtitle||''}</p><p>${a.localizedDescription||''}</p></div>
+    </div>`).join('');
+}).catch(()=>{});
+</script>
+</body>
+</html>
