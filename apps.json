@@ -1,0 +1,81 @@
+{
+  "apps": [
+    {
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "bundleIdentifier": "com.gushi.ddys",
+      "category": "entertainment",
+      "developerName": "Gushi",
+      "downloadURL": "https://github.com/Gu3hi/gushi-apps/releases/download/ddys-1.0.2/DDYS-1.0.2.ipa",
+      "iconURL": "https://raw.githubusercontent.com/Gu3hi/gushi-apps/main/icons/ddys.png",
+      "localizedDescription": "把 ddys.app 做成的原生界面版：原生播放列表（网站实时数据）+ 原生播放器，标签/分类/搜索对标网站。未签名，LCSign 签名后安装。注：本地存档文件名写 1.0.3，但包内 Info.plist 实为 1.0.2 (build 2)，本源以包内实值为准。",
+      "minOSVersion": "16.0",
+      "name": "低调影视",
+      "size": 676395,
+      "subtitle": "ddys.app 原生 iOS 客户端",
+      "tintColor": "#018084",
+      "version": "1.0.2",
+      "versionDate": "2026-11-08T11:43:00+08:00",
+      "versionDescription": "本地存档版（包内实值 1.0.2 build 2，最低 iOS 16.0）",
+      "versions": [
+        {
+          "buildVersion": "2",
+          "date": "2026-11-08T11:43:00+08:00",
+          "downloadURL": "https://github.com/Gu3hi/gushi-apps/releases/download/ddys-1.0.2/DDYS-1.0.2.ipa",
+          "localizedDescription": "本地存档版。SHA-256 3759337c0b8de85c6f4cc7df61a79bd292999e0d390569d78229c93778572c9a",
+          "minOSVersion": "16.0",
+          "sha256": "3759337c0b8de85c6f4cc7df61a79bd292999e0d390569d78229c93778572c9a",
+          "size": 676395,
+          "version": "1.0.2"
+        }
+      ]
+    },
+    {
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "bundleIdentifier": "org.d2rmobile.app",
+      "category": "games",
+      "developerName": "jiayx (d2r-mobile-build)",
+      "downloadURL": "https://github.com/Gu3hi/gushi-apps/releases/download/d2rmobile-1.0-ios17/D2RMobile-ios17-unsigned.ipa",
+      "iconURL": "https://raw.githubusercontent.com/Gu3hi/gushi-apps/main/icons/d2r.png",
+      "localizedDescription": "官方 D2RMobile IPA 重打包至 iOS 17 可自签版。包体约 123 MB。未签名，LCSign 签名后安装。",
+      "minOSVersion": "17.0",
+      "name": "D2R Mobile",
+      "size": 123530804,
+      "subtitle": "暗黑破坏神 2 重制版手游移植（iOS 17 重打包）",
+      "tintColor": "#8A2BE2",
+      "version": "1.0",
+      "versionDate": "2026-11-08T11:43:00+08:00",
+      "versionDescription": "iOS 17 重打包版（最低 iOS 17.0）",
+      "versions": [
+        {
+          "buildVersion": "1",
+          "date": "2026-11-08T11:43:00+08:00",
+          "downloadURL": "https://github.com/Gu3hi/gushi-apps/releases/download/d2rmobile-1.0-ios17/D2RMobile-ios17-unsigned.ipa",
+          "localizedDescription": "iOS 17 重打包版。SHA-256 4dc2042b3117e831b4c3d88e5410658518677ea3c880bde2bad1e67d0f3ac32c",
+          "minOSVersion": "17.0",
+          "sha256": "4dc2042b3117e831b4c3d88e5410658518677ea3c880bde2bad1e67d0f3ac32c",
+          "size": 123530804,
+          "version": "1.0"
+        }
+      ]
+    }
+  ],
+  "description": "个人自用软件源（公开仓，仅 DDYS 与 D2R Mobile；Burger 不在此仓）。全部为未签名 IPA，LCSign 里下载后用自己的证书签名安装。同一个 apps.json 同时带 ESign/LCSign 扁平字段与 AltStore 2.0 的 versions 数组，LCSign / 轻松签 / Feather / SideStore / AltStore 均可添加。",
+  "featuredApps": [
+    "com.gushi.ddys"
+  ],
+  "iconURL": "https://raw.githubusercontent.com/Gu3hi/gushi-apps/main/icons/ddys.png",
+  "identifier": "com.gushi.source",
+  "name": "Gushi 自用源",
+  "news": [],
+  "nsfw": false,
+  "sourceURL": "https://raw.githubusercontent.com/Gu3hi/gushi-apps/main/apps.json",
+  "subtitle": "自用 App 合集：Burger、DDYS、D2RMobile 等未签名 IPA，下载后由 LCSign 签名安装",
+  "tintColor": "#F54F32",
+  "website": "https://gu3hi.github.io/gushi-apps/"
+}
